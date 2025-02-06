@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatul Stern</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    <h1>
+        Palatul Stern
+    </h1>
+
+    <p>
+        Istoricul acestei clădiri ne trimite în primii ani ai secolului al XX-lea, când Miklós Stern a cumpărat un teren de la Consiliul Local, tocmai pe artera centrală. Achiziția a fost făcută în anul 1904, iar Stern a plătit 82.600 de coroane pentru teren.
+    </p>
+
+    <p>
+        Planurile amplului imobil au fost concepute de arhitecţii Komor Marcell şi Jakab Dezső, renumiții arhitecti ce au proiectat şi palatul “Vulturul Negru”. Lucrările au fost finalizate în anul 1909, oferind orădenilor un model de arhitectură funcţională, în armonie cu mediul natural.
+    </p>
+
+    <h3>Arhitectura</h3>
+
+    <p>
+        În anii 1904- 1905, se afirmase cu forţă viziunea arhitectului maghiar Ödön Lechner. Programul său architectural punea în valoare specificul artei populare maghiare, ale cărei motive decorative și simbolice le-a transpus cu eleganţă în limbajul arhitecturii.
+    </p>
+
+    <p>
+        Acest impozant edificiu este unul dintre reperele arhitecturale cele mai semnificative ale elegantei artere pietonale orădene. Palatul oferă un dublu spectacol architectural: pe de o parte, etalează pe ambele faţade o decoraţie elegantă, pe de altă parte, oferă contemplaţiei un spațiu interior de o atmosferă poetică fără egal în arhitectura orădeană. Păşind dincolo de pragul celor două porți monumentale, bolţile cu stucaturi şi arcuirea casei scării cu eleganta ei feronerie te invită să strabaţi un spațiu circular suspendat undeva deasupra timpului.
+    </p>
+
+    <p>
+        Faţada principală, cea dinspre strada Republicii, este dinamizată de prezenţa în decroş a două bowindouri monumentale. Aceste “burdufuri” sunt încununate de pinioane cu muchia blând îndulcită de arabescul unor acolade. Jocul dinamic, sincopat, al ecranului faţadei lasă să desfăşoare o decoraţie bine dozată, tributară stilului neo-maghiar: un bandou decorativ alcătuit din motive populare maghiare pune în valoare ancadramentele, aşa cum broderia costumelor pupulare subliniază părţile esenţiale ale costumului.
+    </p>
+    
+</body>
+</html>
+
+<style>
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+    #header{
+        width: 100%;
+    }
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

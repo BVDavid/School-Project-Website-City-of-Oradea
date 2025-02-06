@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel = "stylesheet" href = "CSSContact.css">
+    <link rel="stylesheet" href="CSSheader.css"/>
+    <script>
+        fetch('headerContact.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <script src = "/FisiereJavaScript/formularJS.js"></script>
+    <section class = "wrapper">
+    <h2>Formular de contact</h2>
+    <form class="contact-form" onsubmit = "return validateForm()" method="post">
+        <div class="form-group">
+            <label for="nume">Nume complet:</label>
+            <input type="text" id="nume" name="nume">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Număr de telefon:</label>
+            <input type="tel" id="telefon" name="telefon">
+        </div>
+
+        <div class="form-group">
+            <label for="Mesaj">Cerințe speciale:</label>
+            <textarea id="mesaj" name="mesaj" rows="4" placeholder="Introduceți mesajul dvs aici"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Trimite mesajul</button>
+        </div>
+    </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatul Sztarill</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    <h1>
+        Palatul Sztarill
+    </h1>
+
+    <p>
+        În anul 1902 arhitectul Ferenc Sztarill (1859–1943) a demarat construcţiile unei case de raport cu două etaje, la intersecţia Pieţei Ferdinand cu strada Teatrului. În stil neogotic cu elemente secession, cu frontoane înalte şi contururi curbate, Palatul Sztarill avea la etaje apartamente de închiriat, iar la parter cafeneaua EMKE, ce avea să devină preferata scriitorilor şi ziariştilor vremii.
+    </p>
+
+    <p>
+        În anul 1904 proprietarul a făcut o ofertă oraşului pentru lărgirea clădirii, prin achiziţia depozitului de decoruri de teatru din vecinătate, care urma să fie construit într-o altă parte a oraşului. Conducerea oraşului a respins oferta, astfel clădirea a fost lărgită cu patru axe în direcţia străzii Teatrului.
+    </p>
+    <p>
+        În anul 1930 Palatul Sztarill a fost transformat în hotel, preluând denumirea de Hotelul Astoria. Hotelul a funcţionat doar timp de câţiva ani, pentru că după cel de-al doilea război mondial a fost închis, încăperile de la etaj fiind destinate din nou locuinţelor. Spaţiile cafenelei EMKE au fost folosite mai întâi ca magazin de mercerie, devenind apoi spaţiu expoziţional.
+    </p>
+    <p>
+        În anul 1975 au redeschis Hotelul Astoria, însă mobilierul original, realizat în stil secession n-a fost păstrat. Clădirea găzduieşte acum Grand Hotel Astoria, iar la parter cafeneaua EMKE a fost înlocuită cu restaurantul Crown Pub.
+    </p>
+    
+    <h3>Arhitectura</h3>
+    <p>
+        Faptul de a fi o clădire panoramică, de colţ, este bine valorificat de arhitect, aici regăsind aceeaşi soluţie “prietenoasă”, de retragere prin rotunjirea unghiului de întâlnire dintre planurile faţadei, ca şi la hotelul Rimanóczi. Deschiderile ferestrelor sunt tratate asemeni unor module, fiecare marcând câte o travee. Păstrând acelaşi ritm riguros, acestea sunt surmontate de acolade ce alcătuiesc o atică sinuoasă, elegantă, ce le unifică vizual, amplificând totodată şi monumentalitatea întregului edificiu. In plus, soluţia arhitecturală a amplasării pe colţ este mult mai plastic tratată decât la hotelul învecinat, Transilvania.
+    </p>
+    <p>
+        Privită în ansamblu, ritmica succesiunii nivelurilor respectă soluţiile curente ale perioadei, specifice programului clădirii, aceea de hotel-restaurant: parter înalt, mezanin şi două etaje. Aici întâlnim o particulariate a acestei arhitecturi, în sensul în care balcoanele, deşi sunt în consolă, nu depăşesc planul faţadei, având deci expresia arhitecturală a loggiei. Pentru că balustrada lor, continuă, este alcătuită numai din feronerie, aspectul lor este gracil, transparent, aproape imponderabil, fapt ce le conferă o notă de certă modernitate.
+    </p>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+    #header{
+        width: 100%;
+    }
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

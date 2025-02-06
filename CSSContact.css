@@ -1,0 +1,148 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.wrapper{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+    p {
+        font-size: 12px;
+        color: #555;
+        margin-top: 5px;
+    }
+
+    .content, p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        border-left: 4px solid #0D4D73;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-form {
+        width: 100%;
+        max-width: 500px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .submit-btn {
+        background-color: #0D4D73;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .submit-btn:hover {
+        background-color: #083a56;
+    }
+}/*ciudat dar daca las aici aceasta paranteza in plus header-ul apare corect, altfel apare cu margin left si right*/
+body {
+             font-family: "Arial", sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f4f4f4;
+             color: #333333;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: flex-start;
+
+             p {
+                 font-size: 12px;
+                 color: #555;
+                 margin-top: 5px;
+             }
+
+             .content, p {
+                 line-height: 1.6;
+                 margin-bottom: 15px;
+                 padding: 15px;
+                 border-radius: 8px;
+                 background-color: #f9f9f9;
+                 border-left: 4px solid #0D4D73;
+                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+             }
+
+             .booking-form {
+                 width: 100%;
+                 max-width: 500px;
+                 background-color: #ffffff;
+                 padding: 20px;
+                 border-radius: 8px;
+                 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                 margin-top: 20px;
+             }
+
+             .form-group {
+                 margin-bottom: 15px;
+             }
+
+             label {
+                 display: block;
+                 font-weight: bold;
+                 margin-bottom: 5px;
+             }
+
+             input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+                 width: 100%;
+                 padding: 8px;
+                 border-radius: 4px;
+                 border: 1px solid #ccc;
+             }
+
+             textarea {
+                 resize: vertical;
+             }
+
+             .submit-btn {
+                 background-color: #0D4D73;
+                 color: #fff;
+                 padding: 10px 20px;
+                 border: none;
+                 border-radius: 4px;
+                 cursor: pointer;
+                 font-size: 16px;
+             }
+
+             .submit-btn:hover {
+                 background-color: #083a56;
+             }
+         }

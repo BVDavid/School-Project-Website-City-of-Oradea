@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piata Unirii</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+
+    <h1>
+        Piata Unirii
+    </h1>
+
+    <p>
+        Piața Unirii din Oradea este gazda mai multor idei materializate de-ale diferitor maeștrii arhitecți, pictori, constructori … care, chiar dacă nu au atins nivelul geniilor lumii, au lăsat daruri prețioase pe acest pământ. Iar, dovada timpului este cea mai puternică în a indentifica adevărata măiestrie care se regăsește în fostul Oraș Nou, actuala Piața Unirii.
+    </p>
+    <p>
+        Măiestria sculptorului Michelangelo Buonarroti, care cu o forță de gigant, cu o voință de titan și cu o intuiție de geniu a rămas viu până în zilele noastre; măiestria omului politic care luptă pentru binele societății, precum a fost la noi Aurel Lazăr; măiestria artistului care prin forța imaginației transpune idei-punte între om și divinitate, precum a fost Leonardo da Vinci; măiestria inventatorului și geniului Nikola Tesla care și-a transpus ideile spectaculoase în lumea materială cu o foarte mare precizie și ingeniozitate … toate acestea și multe altele, cel mai probabil au fost obținute prin muncă, inteligență, imaginație, cunoaștere, bun simț, perseverență și mai ales … răbdare
+    </p>
+
+    <h3>
+        Ce a fost Piata Unirii din Oradea?
+    </h3>
+
+    <p>
+        Mutarea mai înspre vest, de lângă Cetatea Oradea înspre Piața Unirii (după ieșirea de sub ocupația turcă), a dus la restabilirea nucleului orașului, rezultând dezvoltarea unui târg numit Orașul Nou, între Crișul Repede și Pârâul Peța, modernizarea străzilor și a piețelor publice, ridicarea unor construcții de mare amploare ce abordează stiluri diferite, precum: baroc, clasicist, eclectic, istorizant, secesion, modernist și multe alte evenimente cheie care au contribuit ca actuala Piața Unirii să devină centrul istoric și cultural al orașului Oradea.
+    </p>
+
+    <p>
+        Odată, prin secolul al XVIII-lea, venise momentul ca și orașul nostru să cunoască o renaștere. Iar, această revitalizare a condus ca următoarele evenimente să aibă loc: în anul 1713 s-a aprobat contractul care promova respectul și libertatea în ceea ce privește credința fiecăruia; deschiderea cursurilor de filosofie și de drept; unirea celor patru târguri care se aflau lângă Cetatea Oradea, și anume: Oradea, Olosig, Velența și Subcetatea – astfel s-a preluat un nume și un scop comun, adică: Oradea Mare (decembrie 1849, Decretul Imperial); depunerea Petițiunii românilor din dieceza Orăzii Mari pentru a dobândi drepturi religioase (1850); primele alegeri orășenești din 1861; obținerea rangului de municipiu în 1870 și introducerea iluminatului stradal cu spirt aerian; publicarea primelor reguli ce priveau circulația vehiculelor (1872); înființarea Reuniunii de cântăreți Hilaria (1875) și a revistei Familia a lui Iosif Vulcan (1880); construirea primelor trotuare (1892) și altele scrise și nescrise …
+    </p>
+
+</body>
+</html>
+
+<style>
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+    #header{
+        width: 100%;
+    }
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

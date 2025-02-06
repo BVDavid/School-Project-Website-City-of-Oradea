@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenimente</title>
+    <link rel = "stylesheet" href = CssEvenimente.css>
+    <link rel="stylesheet" href="CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('headerEvenimente.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+</head>
+<body>
+
+
+    <section id="evenimente">
+        <h1>Evenimente în Oradea săptămâna viitoare</h1>
+
+        <div class="eveniment">
+            <h2>Concert de Muzică Clasică</h2>
+            <p><strong>Data:</strong> 18 Noiembrie 2024</p>
+            <p><strong>Locație:</strong> Filarmonica Oradea</p>
+            <p>O seară de muzică clasică interpretată de artiști renumiți. Biletele sunt disponibile online și la intrare.</p>
+        </div>
+
+        <div class="eveniment">
+            <h2>Târg de Oradea</h2>
+            <p><strong>Data:</strong> 15-20 Noiembrie 2024</p>
+            <p><strong>Locație:</strong> Piața Unirii</p>
+            <p>Bucurați-vă de diverse la târgul de Oradea, unde veți găsi produse tradiționale, cadouri și preparate culinare specifice sezonului.</p>
+        </div>
+
+        <div class="eveniment">
+            <h2>Festivalul Vinului</h2>
+            <p><strong>Data:</strong> 22 Noiembrie 2024</p>
+            <p><strong>Locație:</strong> Cetatea Oradea</p>
+            <p>Un festival dedicat iubitorilor de vin, cu degustări, muzică live și produse tradiționale. Un eveniment perfect pentru întreaga familie!</p>
+        </div>
+    </section>
+</body>
+</html>

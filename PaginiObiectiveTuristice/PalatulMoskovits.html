@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatul Moskovits</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    
+    <h1>
+        Palatul Moskovits Miksa
+    </h1>
+
+    <p>
+        Palatul a fost ridicat la comanda inginerului Moskovits Miksa. Acesta a cumpărat terenul în anul 1904, pentru suma de 52000 de coroane şi a locuit în noul imobil. Familia Moskovits deținea la începutul secolului al XX-lea una dintre cele mai importante intreprinderi din Oradea denumită – Fabrica de spirt, drojdie, rom, lichior și chimicale Moskovits Mór și fiul.
+    </p>
+
+    <p>
+        Produsele lor au avut piață de desfacere în Serbia și Austria. La începutul secolului au realizat și distribuit, cu acordul episcopului romano-catolic de atunci, Laurențiu Schlauch, o băutură specială, exotică Lichorul „Lotus”, obținută din Nimphaea Lothus Thermalis de la Băile Episcopale (azi Băile 1 Mai). Lichiorul a fost numit și „băutura de masă a înaltei societăți” a fost pusă în vânzare numai în anumite prăvălii și cofetării. Chiar și poetul Ady Endre în anul 1906 a dedicat câteva rânduri acestui fenomen („Lotusul moare”).
+    </p>
+
+    <h3>Arhitectura</h3>
+
+    <p>
+        Clădirea a fost ridicată între anii 1904-1905. La structura de rezistenţă s-au utilizat pentru prima dată în Oradea plăci cu nervuri din beton armat (de tip Hennebique), structura de rezistenţă fiind proiectată de profesorul universitar ing. Zielinszky Szilárd din Budapesta. Palatul este o nouă mostră de apetit deosebit pentru secessionul de sorginte germană al lui Rimanóczy, secession münchenez, aşa-numitul Lilienstil, în cazul de faţă.
+    </p>
+
+    <p>
+        Palatul beneficiază de o bogată ornamentică vegetalo-simbolistică, de o perfectă alunecare a curbelor şi de o feronerie secession foarte bine lucrată. Predomină elementele vegetale, flori cu tulpinile lungi, curbilinii, pe care le regăsim la toate elementele decorate. La nivelul parterului ornamentele vegetale sunt amplasate sub bovindouri, pe console, în jurul golurilor cu grilaj.
+    </p>
+
+    <p>
+        Palatul Moskovits are subsol, parter înalt, parţial mezanin şi două etaje. Subsolul era destinat spaţiilor de depozitare, parterul magazinelor, magaziilor, iar în curte există un mic apartament cu două camere şi bucătărie. Intrarea, amplasată pe Str. Parcul Traian, se face printr-un culoar în capătul căruia se găseşte scara principală. O a doua scară de serviciu este amplasată în aripa paralelă celei cu scara principală, în curte. La etajul întâi şi al doilea galeriile suspendate care înconjoară curtea deservesc locuinţele. Apartamentele au fost recompartimentate în timp. Iniţial erau apartamente mai mari, având de la trei la cinci încăperi, camerele înspre stradă, iar spre curtea interioară spaţiile de serviciu (bucătărie, cămară, camera servitoarei etc.).
+    </p>
+    
+</body>
+</html>
+
+<style>
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+    #header{
+        width: 100%;
+    }
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

@@ -1,0 +1,17 @@
+<div class="row">
+        <div class="col">
+            <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/1.jpg" alt="Poza Hotel Caro">
+        </div>
+        <div class="col">
+            <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/2.jpg" alt="Poza Hotel Caro">
+        </div>
+        <div class="col">
+            <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/3.jpg" alt="Poza Hotel Caro">
+        </div>
+        <div class="col">
+            <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/4.jpg" alt="Poza Hotel Caro">
+        </div>
+        <div class="col">
+            <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/5.jpg" alt="Poza Hotel Caro">
+        </div>
+    </div>

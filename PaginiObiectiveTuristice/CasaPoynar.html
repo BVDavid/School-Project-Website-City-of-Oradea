@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Poynar</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    <h1>
+        Casa Poynar
+    </h1>
+    <p>
+        Această clădire reprezentativă cu etaj a fost ridicată la începutul secolului al XX-lea în locul unei case vechi, proprietate a familiei Ioan Poynár (Pojnar, Poinar). Casa veche din inima orașului a fost destinată comerțului, fiind compartimentată pentru prăvălii: atelier de croitorie, prăvălie de delicatese, papetărie și librărie.
+    </p>
+    <p>
+        Clădirea se află la intersecţia Pieţei Regele Ferdinand I (Piața Bémer) cu strada Grigorescu (Mészáros), este unul dintre palatele proiectate și construite în stil secession la începutul secolului al XX-lea, anul 1907, finalizată în anul 1911, de către cunoscutul arhitect orădean, Ferenc Sztarill.
+    </p>
+    <h3>Arhitectura</h3>
+    <p>
+        Cel mai caractertistic element al clădirii este turnul de colţ acoperit cu coif bulbat, al cărui ultim nivel este articulat cu un şir de semicolonete cu capiteluri decorate cu frunze şi croşete. Faţadele laterale şi primul etaj al turnului sunt străpunse de ferestre dreptunghiulare, etajul al doilea fiind dominat de ferestre cu închidere semicirculară. Pervazul ferestrelor este sprijinit de console simple, chenarul fiind decorat cu un şir de butoane de forma unor rozete stilizate. Cele două axe principale sunt încoronate de un fronton triunghiular cu contur curbat, străpuns de o fereastră circulară, suprafaţa aflată deasupra golului fiind decorată cu relieful unui vas cu flori.
+    </p>
+</body>
+</html>
+
+<style>
+
+    #header{
+        width: 100%;
+    }
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatrul Regina Maria</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    <h1>
+        Teatrul de Stat Regina Maria
+    </h1>
+    <p>
+        Impozantul edificiu al Teatrului de Stat, numit în epocă Teatrul Orăşenesc, a marcat centrul de greutate al configuraţiei arhitecturale a Oradiei sfârşitului de secol XIX.
+    </p>
+    <p>
+    La începutul secolului al XIX-lea, încep lucrările de reorganizare a pieței centrale din Olosig (azi, Piața Ferdinand). S-au demolat casele mici și sărăcăcioase, cu această ocazie fiind largită și strada principală pe această porțiune, de la 9,9 la 16 metri. Multă vreme conducerea orașului nu s-a putut decide nici în privința amplasării Teatrului. Ultima variantă alea de Consiliul Local, în septembrie 1893, a fost Piața Mare ( azi, Parcul 1 Decembrie). În februarie 1894, o comisie de la Teatru a lansat o licitație publică pentru proiectarea clădirii. S-au prezentat doar două proiecte, dar nici una dintre ele nu a corespuns. În martie 1895, proiectarea teatrului a fost încredințată renumitei firme vieneze „Fellner & Helmer”. După care polemica în ceea ce privește amplasarea Teatrului s-a încins din nou. După propunerile venite din partea arhitecților orașului, inginerul șef al orașului a decis să se consulte cu firma vieneză, locația aleasă a fost Piața Bémer (Piața Ferdinand).
+    </p>
+    <h3>Realizat in 15 luni</h3>
+    <p>
+        Prima lovitură de târnăcop la fundația teatrului orădean a fost consemnată la 11 iulie 1899, iar inaugurarea lăcașului de cultură s-a făcut la 15 octombrie 1900. Lucrările de execuţie au fost conduse de echipa formată de arhitecţii Rimanóczy Kálmán Jr., Rendes Vilmos şi Guttmann József, lucrările au fost supervizate de David Busch, arhitectul-şef al urbei, iar dirigenţia a fost asigurată de inginerul Krubicza József. Majoritatea sculpturilor au fost realizate de Ferenc Peller, decoraţiile cu foiţă de aur de Vilmos Eichorn, stucaturile de Vilmos Linhard, lucrările de tapiţerie de József Kuncz şi asociaţii, tâmplăriile de Károly Reiner, iar mobilierul de Vilmos Herczegh.
+    </p>
+    <p>
+    Punct de referinţă al vieţii culturale orădene, măreţul edificiu a marcat nota de vârf a eclectismului cu dominantă clasică din arhitectura oraşului.
+    </p>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+    #header{
+        width: 100%;
+    }
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

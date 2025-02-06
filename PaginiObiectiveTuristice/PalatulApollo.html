@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatul Apollo</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+</head>
+<body>
+
+
+    <h1>
+        Palatul Apollo
+    </h1>
+
+    <p>
+        În secolul al XIX-lea exista, pe amplasamentul actualului Palat Apollo, un han cu numele Apollo. În anul 1910, Consiliul Orășenesc a dorit să valorifice terenul și a hotărât ca pe acel amplasament să fie ridicat un nou imobil. Acesta a fost singurul imobil de raport ridicat la inițiativă publică, toate celelalte imobile de raport construite la începutul secolului al XX-lea fiind proprietăți private.
+    </p>
+    
+    <p>
+        În primăvara anului 1911 Kálmán Rimanóczy junior a prezentat proiectul, iar serviciul tehnic și comisiile au propus municipalității să facă o licitație pentru ridicarea clădirii. În martie 1912 s-a ținut licitația, iar Kálmán Rimanóczy junior a și câștigat-o, având cea mai bună ofertă. Din păcate, el a decedat în 12 iulie 1912. Văduva arhitectului a cerut Consiliului Municipal să-l însărcineze pe inginerul-arhitect Tivadar Krausze cu coordonarea lucrărilor la noua clădire, deoarece acesta a fost colaboratorul arhitectului defunct. În septembrie 1913 presa orădeană scria că lucrările se vor finaliza în primăvara anului 1914, dar imobilul a fost finalizat mai târziu, în același an.
+    </p>
+
+    <p>
+        Pentru a realiza venituri, municipalitatea a oferit spre închiriere spațiile din imobil. În anul 1914, chiria cafenelei a fost stabilită în suma de 20.000 de coroane. În condițiile izbucnirii războiului a fost dificil de găsit chiriași pentru toate spațiile, pentru cafeneaua de la parter, pentru trei dintre apartamentele de lux și atelierele de la etajul al treilea. În 14 mai 1914 a apărut o știre care susținea că la Palatul Apollo toate apartamentele au fost vândute. Totuși, pe parcursul lunii septembrie și după mai multe licitații, cafeneaua și-a găsit chiriașul: orădeanul Ernő Bürger s-a prezentat cu o ofertă favorabilă, luând spațiul în chirie pentru 12 ani.
+    </p>
+
+    <h3>Arhitectura</h3>
+
+    <p>
+        Decorațiunile faţadelor  prezintă o îmbinare de stiluri între elementele Empire berlinez cu elementele decorative ale anilor 1900.
+    </p>
+
+    <p>
+        În partea centrală se află un rezalit de mari dimensiuni, ritmat pe verticală prin lesene ornate în partea superioară cu panglici, ghirlande, scuturi, elemente vegetale. Partea superioară a lesenelor susţine patru statui  alegorice, reprezentând valorile spirituale ale orașului.
+    </p>
+</body>
+</html>
+
+<style>
+
+    #header{
+        width: 100%;
+    }
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>

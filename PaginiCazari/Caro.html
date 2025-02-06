@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro Boutique Hotel</title>
+    <link rel = "stylesheet" href =CssCarusel.css>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    <h1>
+        Caro Boutique Hotel
+    </h1>
+    <p>
+        Aflat la 500 de metri de centrul orașului, într-o clădire istorică renovată, Hotel Caro îți poate oferi locația ideală pentru a explora Oradea la pas, pentru că aproape toate obiectivele turistice sunt aproape. Tip: Micul dejun este tare gustos și consistent.
+    </p>
+
+<div class="row">
+    <div class="col">
+        <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/1.jpg" alt="Poza Hotel Caro">
+    </div>
+    <div class="col">
+        <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/2.jpg" alt="Poza Hotel Caro">
+    </div>
+    <div class="col">
+        <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/3.jpg" alt="Poza Hotel Caro">
+    </div>
+    <div class="col">
+        <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/4.jpg" alt="Poza Hotel Caro">
+    </div>
+    <div class="col">
+        <img class="PozaCazare" src="/source/PozePaginaCazareSpecific/Caro/5.jpg" alt="Poza Hotel Caro">
+    </div>
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1/5</div>
+        <img src="../source/PozePaginaCazareSpecific/Caro/1.jpg" style="width:100%">
+        <div class="text">Poza 1</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"> 2/5</div>
+        <img src="../source/PozePaginaCazareSpecific/Caro/2.jpg" style="width:100%">
+        <div class="text">Poza 2</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3/5</div>
+        <img src="../source/PozePaginaCazareSpecific/Caro/3.jpg" style="width:100%">
+        <div class="text">Poza 3</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4/5</div>
+        <img src="../source/PozePaginaCazareSpecific/Caro/4.jpg" style="width:100%">
+        <div class="text">Poza 4</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img src="../source/PozePaginaCazareSpecific/Caro/5.jpg" style="width:100%">
+        <div class="text">Poza 5</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+    slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+    <p>
+        Pret de la 50 EURO la 75 EURO.
+    </p>
+
+    <h2>Rezervare Cameră</h2>
+    <form class="booking-form" action="/submit-booking" method="post">
+        <div class="form-group">
+            <label for="nume">Nume complet:</label>
+            <input type="text" id="nume" name="nume" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Număr de telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+        </div>
+
+        <div class="form-group">
+            <label for="checkin">Data de check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="checkout">Data de check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+        </div>
+
+        <div class="form-group">
+            <label for="persoane">Număr de persoane:</label>
+            <select id="persoane" name="persoane" required>
+                <option value="1">1 Persoană</option>
+                <option value="2">2 Persoane</option>
+                <option value="3">3 Persoane</option>
+                <option value="4">4 Persoane</option>
+                <option value="5">5 Persoane</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tip_camera">Tip de cameră:</label>
+            <select id="tip_camera" name="tip_camera" required>
+                <option value="single">Single</option>
+                <option value="double">Dublă</option>
+                <option value="suite">Suită</option>
+                <option value="family">Cameră de familie</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cerinte_speciale">Cerințe speciale:</label>
+            <textarea id="cerinte_speciale" name="cerinte_speciale" rows="4" placeholder="Introduceți cerințele speciale aici"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Trimite Rezervarea</button>
+        </div>
+    </form>
+
+<style>
+
+    #header{
+        width: 100%;
+    }
+
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    p {
+        font-size: 12px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .content, p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        border-left: 4px solid #0D4D73;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .col {
+        width: 18%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .PozaCazare {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .booking-form {
+        width: 100%;
+        max-width: 500px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    textarea {
+        resize: vertical;
+    }
+    .submit-btn {
+        background-color: #0D4D73;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .submit-btn:hover {
+        background-color: #083a56;
+    }
+    img{
+        min-width: 400px;
+        max-width: 500px;
+        height: auto;
+    }
+</style>
+</body>
+</html>

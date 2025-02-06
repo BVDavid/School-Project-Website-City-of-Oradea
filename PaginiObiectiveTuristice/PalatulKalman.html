@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatul Rimanoczy Kalman</title>
+    <link rel= "stylesheet" href="../CSSheader.css"/>
+    <div id="header"></div>
+    <script>
+        fetch('../FisiereJavaScript/HeaderPtNivel3.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+</head>
+<body>
+    <h1>
+        Palatul Rimanóczy Kalman-senior
+    </h1>
+    <p>
+        Palatul construit în stil eclectic cu elemente gotice datează din anul 1905, fiind o copie la o altă scară și mult simplificată a palatului venețian Cá d’Oro (Casa de Aur) din Veneția.
+    </p>
+    <p>
+        Proprietarul și constructorul a fost arhitectul Kálmán Rimanóczy senior, iar proiectantul – fiul acestuia – renumitul arhitect Kálmán Rimanóczy junior. Frumosul palat a luat locul unei case vechi aflate tot în proprietatea familiei Rimanóczy. Intenția proprietarului de a ridica un palat monumental pe această parcelă datează încă din anul 1859.
+    </p>
+
+    <h3>Arhitectura</h3>
+    <p>
+        Arhitectul cu o bogată viziune alege de data aceasta o narativă medievală, o metaforă potrivită pentru a exprima relația tată-fiu în domeniul arhitecturii (respectiv relația dintre sculptorul Giovanni Bon și fiul acestuia, Bartolomeo) din secolul al XV-lea, realizând replica operei acestora. Exteriorul palatului pune în valoare elemente decorative și structuri din cea mai înfloritoare perioadă a goticului venețian, caracterizată prin utilizarea frecventă a elementelor bizantine și maure.
+    </p>
+    <p>
+        Clădirea pe trei nivele are zeci de apartamente cu una sau mai multe camere și a fost anume concepută cu parterul înalt, astfel încât spațiile de aici să poată fi închiriate pentru a fi folosite în scop comercial. Clădirea are un parter înalt, două etaje, un turnuleț pe colt cu ferestre ondulate și două frontoane în arc semicircular pe fațada principală.
+    </p>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+    #header{
+        width: 100%;
+    }
+
+.content, p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0D4D73;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: block;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+  </style>
